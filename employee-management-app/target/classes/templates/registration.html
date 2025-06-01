@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<br>
+<div class="container">
+  <div class="col-md-6 offset-md-3">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="text-center">Registration</h2>
+      </div>
+      <div class="card-body">
+        <form th:action="@{/saveEmployee}" th:object="${employee}" method="POST">
+
+          <!-- First Name -->
+          <div class="form-group mb-3">
+            <label for="firstname">First Name:</label>
+            <input th:field="*{firstname}" type="text" class="form-control" id="firstname">
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group mb-3">
+            <label for="lastname">Last Name:</label>
+            <input th:field="*{lastname}" type="text" class="form-control" id="lastname">
+          </div>
+
+          <!-- Email -->
+          <div class="form-group mb-3">
+            <label for="email">Email:</label>
+            <input th:field="*{email}" type="email" class="form-control" id="email">
+          </div>
+
+          <!-- Position -->
+          <div class="form-group mb-3">
+            <label for="position">Position:</label>
+            <input th:field="*{position}" type="text" class="form-control" id="position">
+          </div>
+
+          <!-- Department -->
+          <div class="form-group mb-3">
+            <label for="department">Department:</label>
+            <input th:field="*{department}" type="text" class="form-control" id="department">
+          </div>
+
+          <!-- Salary -->
+          <div class="form-group mb-3">
+            <label for="salary">Salary:</label>
+            <input th:field="*{salary}" type="number" step="0.01" class="form-control" id="salary">
+          </div>
+
+          <!-- Experience -->
+          <div class="form-group mb-3">
+            <label for="experience">Experience (years):</label>
+            <input th:field="*{experience}" type="number" min="0" class="form-control" id="experience">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
