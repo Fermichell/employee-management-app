@@ -1,11 +1,7 @@
 codingtechniques\model\Employee.class
-codingtechniques\repository\UserRepository.class
 codingtechniques\service\EmployeeServiceImpl.class
-codingtechniques\service\CustomUserDetailsService.class
 codingtechniques\controller\EmployeeController.class
-codingtechniques\model\User.class
 codingtechniques\security\SecurityConfig.class
 codingtechniques\service\EmployeeService.class
-codingtechniques\controller\AuthController.class
 codingtechniques\repository\EmployeeRepository.class
 codingtechniques\EmployeeManagementAppApplication.class

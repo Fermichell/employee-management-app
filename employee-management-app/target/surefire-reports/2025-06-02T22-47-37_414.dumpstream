@@ -1,0 +1,5 @@
+# Created at 2025-06-02T22:47:37.584
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Folder VS code\employee-management-system-with-spring-boot-main\employee-management-app\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

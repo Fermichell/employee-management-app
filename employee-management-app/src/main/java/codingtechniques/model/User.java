@@ -1,3 +1,4 @@
+/* 
 package codingtechniques.model;
 
 import jakarta.persistence.*;
@@ -51,3 +52,4 @@ public class User {
         this.role = role;
     }
 }
+*/

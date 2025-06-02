@@ -1,6 +1,5 @@
 package codingtechniques.service;
 
-import org.hibernate.FetchNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,20 +20,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Iterable<Employee> findEmployees() {
 		return employeeRepository.findAll();
-	
 	}
 
 	@Override
 	public Employee getEmployeeId(Long id) {
-		Employee employee = employeeRepository.findById(id)
-				.orElseThrow(() -> new FetchNotFoundException("Employee", id));
-		return employee;
+		return employeeRepository.findById(id)
+				.orElseThrow(() -> new IllegalArgumentException("Employee not found with id: " + id));
 	}
 
 	@Override
 	public void deleteEmployee(Long id) {
 		employeeRepository.deleteById(id);
-		
 	}
-	
 }

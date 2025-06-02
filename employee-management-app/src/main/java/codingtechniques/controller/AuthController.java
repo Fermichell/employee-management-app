@@ -8,7 +8,7 @@ public class AuthController {
 
     @GetMapping("/login")
     public String loginPage() {
-        return "login"; // це login.html у папці templates
+        return "login";  
     }
 
     @GetMapping("/")

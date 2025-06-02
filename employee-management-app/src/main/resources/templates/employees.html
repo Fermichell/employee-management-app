@@ -4,11 +4,29 @@
   <meta charset="UTF-8">
   <title>Employees</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Фон через вбудований стиль -->
+  <style>
+    body {
+      background-image: url('/images/images.jpg'); /* Потрібно додати зображення в /static/images/ */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+    }
+
+    .glass-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
 
-  <br>
-  <div class="container">
+  <div class="container glass-container">
     <div class="card">
 
       <div class="card-header d-flex justify-content-between align-items-center">
